@@ -164,18 +164,18 @@
 
 
 
-  <meta name="description" content="汇编语言的学习，一点笔记。。。">
+  <meta name="description" content="机器语言编写程序绝对是让人一件头疼的事情，为了避免使用0和1的组合来编写程序。汇编语言使用短语（缩写）来表示指令，使用变量名称来表示存储空间的位置。汇编语言指令与机器语言指令之间存在着一对一的关系。 汇编语言的学习，一点笔记。。。">
 <meta name="keywords" content="汇编语言">
 <meta property="og:type" content="article">
 <meta property="og:title" content="汇编语言">
 <meta property="og:url" content="https://tcrusher.github.io/2019/09/07/汇编语言.html">
 <meta property="og:site_name" content="Tcrush">
-<meta property="og:description" content="汇编语言的学习，一点笔记。。。">
+<meta property="og:description" content="机器语言编写程序绝对是让人一件头疼的事情，为了避免使用0和1的组合来编写程序。汇编语言使用短语（缩写）来表示指令，使用变量名称来表示存储空间的位置。汇编语言指令与机器语言指令之间存在着一对一的关系。 汇编语言的学习，一点笔记。。。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-09T12:34:26.532Z">
+<meta property="og:updated_time" content="2019-09-18T12:40:14.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="汇编语言">
-<meta name="twitter:description" content="汇编语言的学习，一点笔记。。。">
+<meta name="twitter:description" content="机器语言编写程序绝对是让人一件头疼的事情，为了避免使用0和1的组合来编写程序。汇编语言使用短语（缩写）来表示指令，使用变量名称来表示存储空间的位置。汇编语言指令与机器语言指令之间存在着一对一的关系。 汇编语言的学习，一点笔记。。。">
 
 
 
@@ -515,7 +515,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-09-09 20:34:26" itemprop="dateModified" datetime="2019-09-09T20:34:26+08:00">2019-09-09</time>
+                <time title="修改时间：2019-09-18 20:40:14" itemprop="dateModified" datetime="2019-09-18T20:40:14+08:00">2019-09-18</time>
               
             
           </span>
@@ -587,9 +587,12 @@
       
 
       
-        <p>汇编语言的学习，一点笔记。。。</p>
+        <p>机器语言编写程序绝对是让人一件头疼的事情，为了避免使用0和1的组合来编写程序。汇编语言使用短语（缩写）来表示指令，使用变量名称来表示存储空间的位置。汇编语言指令与机器语言指令之间存在着一对一的关系。</p>
+<p>汇编语言的学习，一点笔记。。。</p>
 <a id="more"></a>
-<h2 id="1、汇编语言介绍"><a href="#1、汇编语言介绍" class="headerlink" title="1、汇编语言介绍"></a>1、汇编语言介绍</h2><h2 id="2、变量、寄存器与数据移动"><a href="#2、变量、寄存器与数据移动" class="headerlink" title="2、变量、寄存器与数据移动"></a>2、变量、寄存器与数据移动</h2><h3 id="2-1、Hello-World"><a href="#2-1、Hello-World" class="headerlink" title="2.1、Hello World"></a>2.1、Hello World</h3><h3 id="2-2、变量声明"><a href="#2-2、变量声明" class="headerlink" title="2.2、变量声明"></a>2.2、变量声明</h3><p>变量名必须以字母打头，其后可以跟着字母数字，可以包含‘_’，’@’，’$’特殊符号，但是通常避免使用特殊符号。<strong>变量名不区分大小写，最大长度为247个字符，通常变量名有1~10个字符组成。</strong></p>
+<h2 id="1、汇编语言介绍"><a href="#1、汇编语言介绍" class="headerlink" title="1、汇编语言介绍"></a>1、汇编语言介绍</h2><p>汇编语言（assembly language）是一种用于<strong>电子计算机</strong>、<strong>微处理器</strong>、<strong>微控制器</strong>或其他可编程器件的低级语言，亦称为符号语言。在汇编语言中，用<strong>助记符</strong>代替<strong>机器指令</strong>的<strong>操作码</strong>，用地址符号或标号代替指令或操作数的地址。在不同的设备中，汇编语言对应着不同的机器语言<strong>指令集</strong>，通过汇编过程转换成机器指令。特定的汇编语言和特定的机器语言指令集是一一对应的，不同平台之间不可直接移植</p>
+<p>—-来自百度百科</p>
+<h2 id="2、变量、寄存器与数据移动"><a href="#2、变量、寄存器与数据移动" class="headerlink" title="2、变量、寄存器与数据移动"></a>2、变量、寄存器与数据移动</h2><h3 id="2-1、Hello-World"><a href="#2-1、Hello-World" class="headerlink" title="2.1、Hello World"></a>2.1、Hello World</h3><h3 id="2-2、变量声明"><a href="#2-2、变量声明" class="headerlink" title="2.2、变量声明"></a>2.2、变量声明</h3><p>变量名必须以字母打头，其后可以跟着字母数字，可以包含‘_’，’@’，’$’特殊符号，但是通常避免使用特殊符号。<strong>变量名不区分大小写，最大长度为247个字符，通常变量名有1~10个字符组成。</strong></p>
 <div class="table-container">
 <table>
 <thead>
@@ -634,7 +637,239 @@
 </table>
 </div>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> num=<span class="number">5</span>; <span class="comment">//c语言</span></span><br><span class="line">num sdword <span class="number">5</span> ; num被初始化为<span class="number">5</span>，汇编语言;表示注释</span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span> grade;</span><br><span class="line">grade byte ? ;?表示汇编程序不对其进行初始化操作</span><br><span class="line"></span><br><span class="line">grades byte <span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span> ; 声明字节数组</span><br><span class="line"></span><br><span class="line">name byte 'abc' ; 声明整体字符串</span><br><span class="line"></span><br><span class="line">name byte 'abc',0 ; 字符串结尾通常带有二进制0，占用1个字节，用于表示字符串结束</span><br></pre></td></tr></table></figure>
-<h3 id="2-3、立即数"><a href="#2-3、立即数" class="headerlink" title="2.3、立即数"></a>2.3、立即数</h3><p>mov</p>
+<h3 id="2-3、立即数"><a href="#2-3、立即数" class="headerlink" title="2.3、立即数"></a>2.3、立即数</h3><p>mov指令将右边操作数值指派给左边的操作数，右边的操作数称为源操作数，左边的操作数称为目的操作数。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mov mem, imm</td>
+<td>将立即数存储到内存中</td>
+</tr>
+<tr>
+<td>mov reg, imm</td>
+<td>将内存单元的值存储到寄存器中</td>
+</tr>
+<tr>
+<td>mov mem, reg</td>
+<td>将寄存器中的内容存储到内存单元中</td>
+</tr>
+<tr>
+<td>mov reg, imm</td>
+<td>将立即数存储到寄存器中</td>
+</tr>
+<tr>
+<td>mov reg, reg</td>
+<td>将源（第二）寄存器中的内容存储到目的（第一）寄存器中</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>imm：immediate</p>
+<p>mem：memory</p>
+<p>reg：register</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mov num1, 5 ; num1地址，5立即数</span><br></pre></td></tr></table></figure>
+<h3 id="2-4、寄存器"><a href="#2-4、寄存器" class="headerlink" title="2.4、寄存器"></a>2.4、寄存器</h3><p>数据不能直接从一个内存单元移动到另一个内存单元中。</p>
+<p>先把随机数存储器（RAM）当中某一个存储单元的内容复制或装载到中央处理器（CPU）中，然后再从中央处理器中把这个内容复制或存储回随机存储器的某一个单元中。在CPU中实现上述快速地、临时性的存储空间作用的部件称为<strong>存储器</strong>，也称累加器</p>
+<h3 id="2-5、数据移动"><a href="#2-5、数据移动" class="headerlink" title="2.5、数据移动"></a>2.5、数据移动</h3><p>如果实现num2=num1；因为不能从一个内存单元移动数据到另一个内存单元，因此不能写成mov num2, num1；必须需要把num1的内容复制到寄存器中，然后将寄存器中的内容复制到num2中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">;num1, num2</span><br><span class="line">mov eax, num1 ;将num1的值装载到寄存器eax中</span><br><span class="line">mov num2, eax ;将寄存器eax的值装载到num2中</span><br></pre></td></tr></table></figure>
+<h3 id="2-6、字符数据"><a href="#2-6、字符数据" class="headerlink" title="2.6、字符数据"></a>2.6、字符数据</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> str1,str2;</span><br><span class="line">str1=<span class="string">'A'</span>;</span><br><span class="line">str2=str1;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">		.data</span><br><span class="line">str1	byte	?</span><br><span class="line">str1	byte	?</span><br><span class="line">		.code</span><br><span class="line">		mov str1, &apos;A&apos; ;将‘A’存储到str1中</span><br><span class="line">		mov al, str1 ;将str1的值存储到寄存器中</span><br><span class="line">		mov str2, al ;将寄存器的值存储到str2中</span><br></pre></td></tr></table></figure>
+<h2 id="3、输入与输出"><a href="#3、输入与输出" class="headerlink" title="3、输入与输出"></a>3、输入与输出</h2><h3 id="3-1、Hello-World"><a href="#3-1、Hello-World" class="headerlink" title="3.1、Hello World"></a>3.1、Hello World</h3><h3 id="3-2、整数输出"><a href="#3-2、整数输出" class="headerlink" title="3.2、整数输出"></a>3.2、整数输出</h3><h3 id="3-3、整数输入"><a href="#3-3、整数输入" class="headerlink" title="3.3、整数输入"></a>3.3、整数输入</h3><h2 id="4、算术运算指令"><a href="#4、算术运算指令" class="headerlink" title="4、算术运算指令"></a>4、算术运算指令</h2><h3 id="4-1、加法与减法运算"><a href="#4-1、加法与减法运算" class="headerlink" title="4.1、加法与减法运算"></a>4.1、加法与减法运算</h3><ul>
+<li>加法指令</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add mem, imm</td>
+<td>将内存单元的数值与立即数的值相加，结果值放到内存单元中</td>
+</tr>
+<tr>
+<td>add reg, mem</td>
+<td>将寄存器中的值加上内存单元中的值，结果值放到寄存器中</td>
+</tr>
+<tr>
+<td>add mem, reg</td>
+<td>将内存单元中的值加上寄存器中的值，结果值放到内存单元中</td>
+</tr>
+<tr>
+<td>add reg, imm</td>
+<td>将寄存器中的值加上立即数的值，结果值放到寄存器中</td>
+</tr>
+<tr>
+<td>add reg, reg</td>
+<td>将目的(第一个)寄存器的值加上源(第二个)寄存器的值，结果值放到目的寄存器中</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>减法指令</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sub mem, imm</td>
+<td>将内存单元的数值减去立即数的值，结果值放到内存单元中</td>
+</tr>
+<tr>
+<td>sub reg, mem</td>
+<td>将寄存器中的值减去内存单元中的值，结果值放到寄存器中</td>
+</tr>
+<tr>
+<td>sub mem, reg</td>
+<td>将内存单元中的值减去寄存器中的值，结果值放到内存单元中</td>
+</tr>
+<tr>
+<td>sub reg, imm</td>
+<td>将寄存器中的值减去立即数的值，结果值放到寄存器中</td>
+</tr>
+<tr>
+<td>sub reg, reg</td>
+<td>将目的(第一个)寄存器的值减去源(第二个)寄存器的值，结果值放到目的寄存器中</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="4-2、乘法与除法运算"><a href="#4-2、乘法与除法运算" class="headerlink" title="4.2、乘法与除法运算"></a>4.2、乘法与除法运算</h3><ul>
+<li>乘法指令</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>imul reg</td>
+<td>将寄存器eax的值与寄存器中的整数值相乘</td>
+</tr>
+<tr>
+<td>imul mem</td>
+<td>将内存单元中的整数值与寄存器eax中的值相乘</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>idiv指令-除法指令</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>idiv reg</td>
+<td>将寄存器中的值拆分开存储带寄存器对edx:eax中</td>
+</tr>
+<tr>
+<td>idiv mem</td>
+<td>将内存中的值拆分开存储到寄存器对edx:eax中</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>转化指令</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>意义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cbw</td>
+<td>字节转化为字</td>
+<td>寄存器al的内容扩展到寄存器ax</td>
+</tr>
+<tr>
+<td>cwb</td>
+<td>字转化为双字</td>
+<td>寄存器ax的内容扩展到寄存器eax</td>
+</tr>
+<tr>
+<td>cbq</td>
+<td>双字转化为4个字</td>
+<td>寄存器eax的内容扩展到寄存器对edx:eax</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="4-3、一元运算"><a href="#4-3、一元运算" class="headerlink" title="4.3、一元运算"></a>4.3、一元运算</h3><h3 id="4-4、优先级"><a href="#4-4、优先级" class="headerlink" title="4.4、优先级"></a>4.4、优先级</h3><h2 id="5、选择结构"><a href="#5、选择结构" class="headerlink" title="5、选择结构"></a>5、选择结构</h2><h3 id="5-1、if-then结构"><a href="#5-1、if-then结构" class="headerlink" title="5.1、if-then结构"></a>5.1、if-then结构</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1)</span></span><br><span class="line"><span class="keyword">if</span>(num==<span class="number">0</span>)</span><br><span class="line">    num--;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2)</span></span><br><span class="line"><span class="keyword">if</span>(amount!=<span class="number">1</span>) &#123;</span><br><span class="line">    count++;</span><br><span class="line">    amount=amount+<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">; 1)</span><br><span class="line">.if num==0</span><br><span class="line">dec num</span><br><span class="line">.endif</span><br><span class="line"></span><br><span class="line">; 2)</span><br><span class="line">.if amount!=1</span><br><span class="line">inc count</span><br><span class="line">add amount, 2</span><br><span class="line">.endif</span><br></pre></td></tr></table></figure>
+<h3 id="5-2、if-then-else结构"><a href="#5-2、if-then-else结构" class="headerlink" title="5.2、if-then-else结构"></a>5.2、if-then-else结构</h3><p>else使用<code>.else</code>汇编指令实现</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(x&gt;=y)</span><br><span class="line">    x--;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    y++;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">; if(x&gt;=y)</span><br><span class="line">mov eax, x ;将x的值存储寄存器eax中，因为不能直接比较两个内存单元的值</span><br><span class="line">.if eax&gt;=y</span><br><span class="line">dec x</span><br><span class="line">.else</span><br><span class="line">inc y</span><br><span class="line">.endif</span><br></pre></td></tr></table></figure>
+<h3 id="5-3、嵌套if结构"><a href="#5-3、嵌套if结构" class="headerlink" title="5.3、嵌套if结构"></a>5.3、嵌套if结构</h3><p>使用多个<code>.endif</code>结束if结构</p>
+<h3 id="5-4、case结构"><a href="#5-4、case结构" class="headerlink" title="5.4、case结构"></a>5.4、case结构</h3><p>使用je指令实现case结构</p>
+<h3 id="5-5、字符与逻辑运算符"><a href="#5-5、字符与逻辑运算符" class="headerlink" title="5.5、字符与逻辑运算符"></a>5.5、字符与逻辑运算符</h3><h2 id="6、迭代结构"><a href="#6、迭代结构" class="headerlink" title="6、迭代结构"></a>6、迭代结构</h2><h3 id="6-1、前置检测循环while"><a href="#6-1、前置检测循环while" class="headerlink" title="6.1、前置检测循环while"></a>6.1、前置检测循环while</h3><p><code>.while</code>和<code>.endw</code>汇编指令实现while循环</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span>(i&lt;=<span class="number">3</span>) &#123;</span><br><span class="line">    i++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mov i, 1</span><br><span class="line">.while i&lt;=3</span><br><span class="line">inc i</span><br><span class="line">.endw</span><br></pre></td></tr></table></figure>
+<p>当然也可以使用if-then=else中无条件跳转命令，类似goto语句</p>
+<h3 id="6-2、后置检测循环do-while"><a href="#6-2、后置检测循环do-while" class="headerlink" title="6.2、后置检测循环do-while"></a>6.2、后置检测循环do-while</h3><p><code>.repeat</code>和<code>until</code>汇编指令实现do-while循环</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    i++;</span><br><span class="line">&#125; <span class="keyword">while</span>(i&lt;=<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mov i, 1</span><br><span class="line">.repeat</span><br><span class="line">inc i</span><br><span class="line">.until i&gt;3</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<blockquote>
+<p>.until i&gt;3替换了i&lt;=3，repeat-until循环是直到i&gt;3时，循环才不执行。</p>
+</blockquote>
+<h3 id="6-3、固定迭代循环for"><a href="#6-3、固定迭代循环for" class="headerlink" title="6.3、固定迭代循环for"></a>6.3、固定迭代循环for</h3><p><code>.repeat</code>和<code>.untilcxz</code>汇编指令实现</p>
+<p><code>.repeat</code>和<code>.untilcxz</code>指令使用ecx寄存器作为计数器，<code>.untilcxz</code>完成两个任务，把寄存器ecx的值减1，然后当寄存器ecx的值不为0时，它将跳转到<code>.repeat</code>指令处执行，也就是：当寄存器ecx的值为0时（cxz），循环停止执行。for循环是前置循环，而<code>.</code>repeat和<code>.untilcxz</code>指令是后置循环</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++) &#123;</span><br><span class="line">    <span class="comment">//循环体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mov eax, 3</span><br><span class="line">.repeat</span><br><span class="line">; 循环体</span><br><span class="line">.untilcxz</span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<blockquote>
+<p>首先，将需要执行的次数装载到寄存器ecx中，然后。untilcxz执行一次，寄存器ecx的值减1，同时与0比较，如果不为0，继续循环，为0，则程序控制流跳转到.untilcxz之后开始执行</p>
+</blockquote>
+<h3 id="6-4、循环与输出输入"><a href="#6-4、循环与输出输入" class="headerlink" title="6.4、循环与输出输入"></a>6.4、循环与输出输入</h3><p>INVOKE指令会破坏寄存器eax、ecx和edx的值，<code>.repeat</code>-<code>.untilcxz</code>指令需要使用到寄存器eax的值，因此在输出输入的时候，需要存储寄存器eax的值。注意这里的使用。</p>
+<h3 id="6-5、嵌套循环"><a href="#6-5、嵌套循环" class="headerlink" title="6.5、嵌套循环"></a>6.5、嵌套循环</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">i=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span>(i&lt;=<span class="number">2</span>) &#123;</span><br><span class="line">    j=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=<span class="number">3</span>) &#123;</span><br><span class="line">        j++;</span><br><span class="line">    &#125;</span><br><span class="line">    i++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mov i, 1</span><br><span class="line">.while i&lt;=2</span><br><span class="line">mov j, 1</span><br><span class="line">.while j&lt;=3</span><br><span class="line">inc j</span><br><span class="line">.endw</span><br><span class="line">inc i</span><br><span class="line">.endw</span><br></pre></td></tr></table></figure>
+<h2 id="7、运算指令"><a href="#7、运算指令" class="headerlink" title="7、运算指令"></a>7、运算指令</h2><h3 id="7-1、逻辑运算指令"><a href="#7-1、逻辑运算指令" class="headerlink" title="7.1、逻辑运算指令"></a>7.1、逻辑运算指令</h3><h3 id="7-2、逻辑移位指令"><a href="#7-2、逻辑移位指令" class="headerlink" title="7.2、逻辑移位指令"></a>7.2、逻辑移位指令</h3><h3 id="7-3、算术移位指令"><a href="#7-3、算术移位指令" class="headerlink" title="7.3、算术移位指令"></a>7.3、算术移位指令</h3><h3 id="7-4、循环移位指令"><a href="#7-4、循环移位指令" class="headerlink" title="7.4、循环移位指令"></a>7.4、循环移位指令</h3><h3 id="7-5、堆栈操作"><a href="#7-5、堆栈操作" class="headerlink" title="7.5、堆栈操作"></a>7.5、堆栈操作</h3><h3 id="7-6、数据交换"><a href="#7-6、数据交换" class="headerlink" title="7.6、数据交换"></a>7.6、数据交换</h3><h2 id="8、过程与宏"><a href="#8、过程与宏" class="headerlink" title="8、过程与宏"></a>8、过程与宏</h2><h3 id="8-1、过程"><a href="#8-1、过程" class="headerlink" title="8.1、过程"></a>8.1、过程</h3><p>调用过程的指令为call，call指令只有一个操作数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">; pname为过程名，汇编指令proc指出过程</span><br><span class="line">pname proc</span><br><span class="line">	; 过程体，后需要有ret指令</span><br><span class="line">	ret</span><br><span class="line">pname endp ；结束</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sample proc</span><br><span class="line">	add eax,ebx</span><br><span class="line">	add eax,ecx</span><br><span class="line">	add eax,edx</span><br><span class="line">	ret</span><br><span class="line">sample endp</span><br></pre></td></tr></table></figure>
+<p>调用过程：</p>
+<p>call sample</p>
+<h3 id="8-2、宏"><a href="#8-2、宏" class="headerlink" title="8.2、宏"></a>8.2、宏</h3><p>使用<code>macro</code>定义宏</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mname macro</span><br><span class="line">	; 宏体</span><br><span class="line">	endm</span><br></pre></td></tr></table></figure>
+<p>调用过程需要使用call，调用宏直接写出宏的名字即可。</p>
+<ul>
+<li>宏传递参数</li>
+</ul>
+<p>命名参数是一个代替参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">swap macro p1,p2 ;p1，p2是命名参数</span><br><span class="line">    mov ebx,p1</span><br><span class="line">    xchg ebx,p2 ;交换ebx和p2的值</span><br><span class="line">    mov p1,ebx</span><br><span class="line">    endm</span><br></pre></td></tr></table></figure>
+<p>使用注释来文档化宏定义，又不希望在宏扩展中看到注释，可以使用（;;）代替（;）进行注释</p>
 
       
     </div>
@@ -667,7 +902,7 @@
   <p><span>本文标题:</span><a href="/2019/09/07/汇编语言.html">汇编语言</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Tcrush 的个人博客">Tcrush</a></p>
   <p><span>发布时间:</span>2019年09月07日 - 18:40</p>
-  <p><span>最后更新:</span>2019年09月09日 - 20:34</p>
+  <p><span>最后更新:</span>2019年09月18日 - 20:40</p>
   <p><span>原始链接:</span><a href="/2019/09/07/汇编语言.html" title="汇编语言">https://tcrusher.github.io/2019/09/07/汇编语言.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://tcrusher.github.io/2019/09/07/汇编语言.html" aria-label="复制成功！"></i></span>
   </p>
@@ -721,8 +956,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/22/Redis基础.html" rel="next" title="Redis基础">
-                Redis基础 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/08/01/MyBatis笔记.html" rel="next" title="MyBatis笔记">
+                MyBatis笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -801,7 +1036,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -820,7 +1055,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -843,7 +1080,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -933,7 +1172,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、汇编语言介绍"><span class="nav-number">1.</span> <span class="nav-text">1、汇编语言介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、变量、寄存器与数据移动"><span class="nav-number">2.</span> <span class="nav-text">2、变量、寄存器与数据移动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1、Hello-World"><span class="nav-number">2.1.</span> <span class="nav-text">2.1、Hello World</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2、变量声明"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、变量声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、立即数"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、立即数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、汇编语言介绍"><span class="nav-number">1.</span> <span class="nav-text">1、汇编语言介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、变量、寄存器与数据移动"><span class="nav-number">2.</span> <span class="nav-text">2、变量、寄存器与数据移动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1、Hello-World"><span class="nav-number">2.1.</span> <span class="nav-text">2.1、Hello World</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2、变量声明"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、变量声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、立即数"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、立即数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4、寄存器"><span class="nav-number">2.4.</span> <span class="nav-text">2.4、寄存器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5、数据移动"><span class="nav-number">2.5.</span> <span class="nav-text">2.5、数据移动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6、字符数据"><span class="nav-number">2.6.</span> <span class="nav-text">2.6、字符数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、输入与输出"><span class="nav-number">3.</span> <span class="nav-text">3、输入与输出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1、Hello-World"><span class="nav-number">3.1.</span> <span class="nav-text">3.1、Hello World</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2、整数输出"><span class="nav-number">3.2.</span> <span class="nav-text">3.2、整数输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3、整数输入"><span class="nav-number">3.3.</span> <span class="nav-text">3.3、整数输入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、算术运算指令"><span class="nav-number">4.</span> <span class="nav-text">4、算术运算指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1、加法与减法运算"><span class="nav-number">4.1.</span> <span class="nav-text">4.1、加法与减法运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2、乘法与除法运算"><span class="nav-number">4.2.</span> <span class="nav-text">4.2、乘法与除法运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3、一元运算"><span class="nav-number">4.3.</span> <span class="nav-text">4.3、一元运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4、优先级"><span class="nav-number">4.4.</span> <span class="nav-text">4.4、优先级</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、选择结构"><span class="nav-number">5.</span> <span class="nav-text">5、选择结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1、if-then结构"><span class="nav-number">5.1.</span> <span class="nav-text">5.1、if-then结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2、if-then-else结构"><span class="nav-number">5.2.</span> <span class="nav-text">5.2、if-then-else结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3、嵌套if结构"><span class="nav-number">5.3.</span> <span class="nav-text">5.3、嵌套if结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4、case结构"><span class="nav-number">5.4.</span> <span class="nav-text">5.4、case结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5、字符与逻辑运算符"><span class="nav-number">5.5.</span> <span class="nav-text">5.5、字符与逻辑运算符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、迭代结构"><span class="nav-number">6.</span> <span class="nav-text">6、迭代结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1、前置检测循环while"><span class="nav-number">6.1.</span> <span class="nav-text">6.1、前置检测循环while</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2、后置检测循环do-while"><span class="nav-number">6.2.</span> <span class="nav-text">6.2、后置检测循环do-while</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3、固定迭代循环for"><span class="nav-number">6.3.</span> <span class="nav-text">6.3、固定迭代循环for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-4、循环与输出输入"><span class="nav-number">6.4.</span> <span class="nav-text">6.4、循环与输出输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-5、嵌套循环"><span class="nav-number">6.5.</span> <span class="nav-text">6.5、嵌套循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、运算指令"><span class="nav-number">7.</span> <span class="nav-text">7、运算指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1、逻辑运算指令"><span class="nav-number">7.1.</span> <span class="nav-text">7.1、逻辑运算指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2、逻辑移位指令"><span class="nav-number">7.2.</span> <span class="nav-text">7.2、逻辑移位指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-3、算术移位指令"><span class="nav-number">7.3.</span> <span class="nav-text">7.3、算术移位指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-4、循环移位指令"><span class="nav-number">7.4.</span> <span class="nav-text">7.4、循环移位指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-5、堆栈操作"><span class="nav-number">7.5.</span> <span class="nav-text">7.5、堆栈操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-6、数据交换"><span class="nav-number">7.6.</span> <span class="nav-text">7.6、数据交换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、过程与宏"><span class="nav-number">8.</span> <span class="nav-text">8、过程与宏</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1、过程"><span class="nav-number">8.1.</span> <span class="nav-text">8.1、过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-2、宏"><span class="nav-number">8.2.</span> <span class="nav-text">8.2、宏</span></a></li></ol></li></ol></div>
             
 
           </div>
