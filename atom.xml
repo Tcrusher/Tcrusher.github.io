@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tcrusher.github.io/"/>
-  <updated>2019-10-20T05:24:29.469Z</updated>
+  <updated>2019-11-06T14:05:11.177Z</updated>
   <id>https://tcrusher.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://tcrusher.github.io/2019/10/20/U%E7%9B%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8F%98%E6%88%90exe%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F.html"/>
     <id>https://tcrusher.github.io/2019/10/20/U盘文件夹变成exe应用程序.html</id>
     <published>2019-10-20T04:19:16.000Z</published>
-    <updated>2019-10-20T05:24:29.469Z</updated>
+    <updated>2019-11-06T14:05:11.177Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/uploads/a2.jpg" alt></p><a id="more"></a><h2 id="出现问题"><a href="#出现问题" class="headerlink" title="出现问题"></a>出现问题</h2><p>在日常使用中，你可能会遇到：U盘的文件夹都变成了exe应用程序，或者文件夹直接不见了，但查看U盘的内存可是已经用掉了。是因为U盘中了 <strong>Autorun</strong> 病毒。可以百度、Google下这个病毒，都有详细介绍。</p><h2 id="解决方法1"><a href="#解决方法1" class="headerlink" title="解决方法1"></a>解决方法1</h2><p>下载杀毒软件，对U盘、计算机进行杀毒。听说：计算机裸奔才是最安全的，因此，这里就不介绍这种方法了。</p><h2 id="解决方法2"><a href="#解决方法2" class="headerlink" title="解决方法2"></a>解决方法2</h2><p><strong>基本步骤</strong></p><ol><li><p>先打开计算机的查看方式，把文件扩展名，隐藏的项目选项勾上，其实不做也是可以的。</p></li><li><p>在U盘中新建两个.txt文件，命名随意，这里就命名为a.txt和b.txt</p><ul><li>在a中增添如下代码：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00 </span><br><span class="line">[HKEY_LOCAL_ MACHINE \SOFTWARE\Microsoft\Windows\CurrentVersion</span><br><span class="line">\Explorer\Advanced\Folder\Hidden</span><br><span class="line">\SHOWALL] "CheckedValue"=dword:00000001</span><br></pre></td></tr></table></figure><ul><li>在b中增添如下代码：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for /f "delims=" %%i in ('dir /ah /s/b') do attrib "%%i" -s -h</span><br></pre></td></tr></table></figure></li><li><p>将a的扩展名改为reg，将b的扩展名改为bat</p></li><li><p>依次执行a，b</p></li></ol><p>然后文件就会出现了。把exe删掉</p><hr>]]></content>
+    <content type="html"><![CDATA[<p><img src="/uploads/a2.png" alt></p><a id="more"></a><h2 id="出现问题"><a href="#出现问题" class="headerlink" title="出现问题"></a>出现问题</h2><p>在日常使用中，你可能会遇到：U盘的文件夹都变成了exe应用程序，或者文件夹直接不见了，但查看U盘的内存可是已经用掉了。是因为U盘中了 <strong>Autorun</strong> 病毒。可以百度、Google下这个病毒，都有详细介绍。</p><h2 id="解决方法1"><a href="#解决方法1" class="headerlink" title="解决方法1"></a>解决方法1</h2><p>下载杀毒软件，对U盘、计算机进行杀毒。听说：计算机裸奔才是最安全的，因此，这里就不介绍这种方法了。</p><h2 id="解决方法2"><a href="#解决方法2" class="headerlink" title="解决方法2"></a>解决方法2</h2><p><strong>基本步骤</strong></p><ol><li><p>先打开计算机的查看方式，把文件扩展名，隐藏的项目选项勾上，其实不做也是可以的。</p></li><li><p>在U盘中新建两个.txt文件，命名随意，这里就命名为a.txt和b.txt</p><ul><li>在a中增添如下代码：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00 </span><br><span class="line">[HKEY_LOCAL_ MACHINE \SOFTWARE\Microsoft\Windows\CurrentVersion</span><br><span class="line">\Explorer\Advanced\Folder\Hidden</span><br><span class="line">\SHOWALL] "CheckedValue"=dword:00000001</span><br></pre></td></tr></table></figure><ul><li>在b中增添如下代码：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for /f "delims=" %%i in ('dir /ah /s/b') do attrib "%%i" -s -h</span><br></pre></td></tr></table></figure></li><li><p>将a的扩展名改为reg，将b的扩展名改为bat</p></li><li><p>依次执行a，b</p></li></ol><p>然后文件就会出现了。把exe删掉</p><hr>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/uploads/a2.jpg&quot; alt&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/uploads/a2.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
