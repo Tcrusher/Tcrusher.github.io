@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tcrusher.github.io/"/>
-  <updated>2019-12-04T01:02:31.277Z</updated>
+  <updated>2020-01-12T07:14:40.840Z</updated>
   <id>https://tcrusher.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深入理解Java虚拟机</title>
+    <link href="https://tcrusher.github.io/2020/01/12/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA.html"/>
+    <id>https://tcrusher.github.io/2020/01/12/深入理解Java虚拟机.html</id>
+    <published>2020-01-12T07:09:41.000Z</published>
+    <updated>2020-01-12T07:14:40.840Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/jvm.jpg" alt></p><a id="more"></a><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><h1 id="-2"><a href="#-2" class="headerlink" title="#"></a>#</h1><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/uploads/jvm.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JVM" scheme="https://tcrusher.github.io/categories/JVM/"/>
+    
+      <category term="Java虚拟机" scheme="https://tcrusher.github.io/categories/JVM/Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+    
+      <category term="JVM" scheme="https://tcrusher.github.io/tags/JVM/"/>
+    
+      <category term="Java虚拟机" scheme="https://tcrusher.github.io/tags/Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker基础</title>
@@ -146,6 +172,30 @@
     
     
       <category term="Redis" scheme="https://tcrusher.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git常用命令</title>
+    <link href="https://tcrusher.github.io/2019/07/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
+    <id>https://tcrusher.github.io/2019/07/10/Git常用命令.html</id>
+    <published>2019-07-10T07:37:51.000Z</published>
+    <updated>2020-01-09T07:43:12.569Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/git.jpg" alt></p><a id="more"></a><h2 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h2><h3 id="Git基础"><a href="#Git基础" class="headerlink" title="Git基础"></a>Git基础</h3><h4 id="获取Git库"><a href="#获取Git库" class="headerlink" title="获取Git库"></a>获取Git库</h4><p>你打算使用 Git 来对现有的项目进行管理，你只需要进入该项目目录并输入：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/uploads/git.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://tcrusher.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://tcrusher.github.io/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://tcrusher.github.io/tags/GitHub/"/>
     
   </entry>
   
