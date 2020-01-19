@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tcrusher.github.io/"/>
-  <updated>2020-01-12T07:20:59.376Z</updated>
+  <updated>2020-01-12T07:27:04.330Z</updated>
   <id>https://tcrusher.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://tcrusher.github.io/2020/01/12/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA.html"/>
     <id>https://tcrusher.github.io/2020/01/12/深入理解Java虚拟机.html</id>
     <published>2020-01-12T07:09:41.000Z</published>
-    <updated>2020-01-12T07:20:59.376Z</updated>
+    <updated>2020-01-12T07:27:04.330Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/uploads/a3.jpg" alt></p><a id="more"></a><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><h1 id="-2"><a href="#-2" class="headerlink" title="#"></a>#</h1><hr>]]></content>
+    <content type="html"><![CDATA[<p><img src="/uploads/a3.png" alt></p><a id="more"></a><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><h1 id="-2"><a href="#-2" class="headerlink" title="#"></a>#</h1><hr>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/uploads/a3.jpg&quot; alt&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/uploads/a3.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -180,9 +180,9 @@
     <link href="https://tcrusher.github.io/2019/07/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
     <id>https://tcrusher.github.io/2019/07/10/Git常用命令.html</id>
     <published>2019-07-10T07:37:51.000Z</published>
-    <updated>2020-01-09T07:43:12.569Z</updated>
+    <updated>2020-01-12T09:57:47.789Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/uploads/git.jpg" alt></p><a id="more"></a><h2 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h2><h3 id="Git基础"><a href="#Git基础" class="headerlink" title="Git基础"></a>Git基础</h3><h4 id="获取Git库"><a href="#获取Git库" class="headerlink" title="获取Git库"></a>获取Git库</h4><p>你打算使用 Git 来对现有的项目进行管理，你只需要进入该项目目录并输入：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></p><hr>]]></content>
+    <content type="html"><![CDATA[<p><img src="/uploads/git.jpg" alt></p><a id="more"></a><h1 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h1><h2 id="获取Git库"><a href="#获取Git库" class="headerlink" title="获取Git库"></a>获取Git库</h2><p>你打算使用 Git 来对现有的项目进行管理，你只需要进入该项目目录并输入：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git add .</span><br><span class="line"><span class="meta">$</span> git add file</span><br><span class="line"><span class="meta">$</span> git commit -m 'first commit'</span><br></pre></td></tr></table></figure><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> https://github.com/Tcrusher/python-algorithms</span><br></pre></td></tr></table></figure><h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><ol><li>git branch 创建分支</li><li>git branch -b 创建并切换到新建的分支上</li><li>git checkout 切换分支</li><li>git branch 查看分支列表</li><li>git branch -v 查看所有分支的最后一次操作</li><li>git branch -vv 查看当前分支</li><li>git brabch -b 分支名 origin/分支名 创建远程分支到本地</li><li>git branch —merged 查看别的分支和当前分支合并过的分支</li><li>git branch —no-merged 查看未与当前分支合并的分支</li><li>git branch -d 分支名 删除本地分支</li><li>git branch -D 分支名 强行删除分支</li><li>git branch origin :分支名 删除远处仓库分支</li><li>git merge 分支名 合并分支到当前分支上</li></ol><h2 id="暂存操作"><a href="#暂存操作" class="headerlink" title="暂存操作"></a>暂存操作</h2><ol><li>git stash 暂存当前修改</li><li>git stash apply 恢复最近的一次暂存</li><li>git stash pop 恢复暂存并删除暂存记录</li><li>git stash list 查看暂存列表</li><li>git stash drop 暂存名(例：stash@{0}) 移除某次暂存</li><li>git stash clear 清除暂存</li></ol><h2 id="回退操作"><a href="#回退操作" class="headerlink" title="回退操作"></a>回退操作</h2><ol><li>git reset —hard HEAD^ 回退到上一个版本</li><li>git reset —hard ahdhs1(commit_id) 回退到某个版本</li><li>git checkout — file撤销修改的文件(如果文件加入到了暂存区，则回退到暂存区的，如果文件加入到了版本库，则还原至加入版本库之后的状态)</li><li>git reset HEAD file 撤回暂存区的文件修改到工作区</li></ol><h2 id="标签操作"><a href="#标签操作" class="headerlink" title="标签操作"></a>标签操作</h2><ol><li>git tag 标签名 添加标签(默认对当前版本)</li><li>git tag 标签名 commit_id 对某一提交记录打标签</li><li>git tag -a 标签名 -m ‘描述’ 创建新标签并增加备注</li><li>git tag 列出所有标签列表</li><li>git show 标签名 查看标签信息</li><li>git tag -d 标签名 删除本地标签</li><li>git push origin 标签名 推送标签到远程仓库</li><li>git push origin —tags 推送所有标签到远程仓库</li><li>git push origin :refs/tags/标签名 从远程仓库中删除标签</li></ol><h2 id="常规操作"><a href="#常规操作" class="headerlink" title="常规操作"></a>常规操作</h2><ol><li>git push origin test 推送本地分支到远程仓库</li><li>git rm -r —cached 文件/文件夹名字 取消文件被版本控制</li><li>git reflog 获取执行过的命令</li><li>git log —graph 查看分支合并图</li><li>git merge —no-ff -m ‘合并描述’ 分支名 不使用Fast forward方式合并，采用这种方式合并可以看到合并记录</li><li>git check-ignore -v 文件名 查看忽略规则</li><li>git add -f 文件名 强制将文件提交</li></ol><h2 id="git创建项目仓库"><a href="#git创建项目仓库" class="headerlink" title="git创建项目仓库"></a>git创建项目仓库</h2><ol><li>git init 初始化</li><li>git remote add origin url 关联远程仓库</li><li>git pull</li><li>git fetch 获取远程仓库中所有的分支到本地</li></ol><h2 id="忽略已加入到版本库中的文件"><a href="#忽略已加入到版本库中的文件" class="headerlink" title="忽略已加入到版本库中的文件"></a>忽略已加入到版本库中的文件</h2><ol><li>git update-index —assume-unchanged file 忽略单个文件</li><li>git rm -r —cached 文件/文件夹名字 (. 忽略全部文件)</li></ol><h2 id="取消忽略文件"><a href="#取消忽略文件" class="headerlink" title="取消忽略文件"></a>取消忽略文件</h2><ol><li>git update-index —no-assume-unchanged file</li></ol><h2 id="拉取、上传免密码"><a href="#拉取、上传免密码" class="headerlink" title="拉取、上传免密码"></a>拉取、上传免密码</h2><ol><li>git config —global credential.helper store</li></ol><hr>]]></content>
     
     <summary type="html">
     
