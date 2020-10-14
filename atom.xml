@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tcrushes.github.io/"/>
-  <updated>2020-09-14T07:37:10.504Z</updated>
+  <updated>2020-10-14T13:26:27.856Z</updated>
   <id>https://tcrushes.github.io/</id>
   
   <author>
@@ -21,15 +21,13 @@
     <link href="https://tcrushes.github.io/2020/09/14/%E8%AF%BB%E8%80%85-%E5%86%99%E8%80%85%E9%97%AE%E9%A2%98.html"/>
     <id>https://tcrushes.github.io/2020/09/14/读者-写者问题.html</id>
     <published>2020-09-14T07:37:10.000Z</published>
-    <updated>2020-09-14T07:37:10.504Z</updated>
+    <updated>2020-10-14T13:26:27.856Z</updated>
     
-    <content type="html"><![CDATA[<p class="description"></p><p><img src="https://" alt style="width:100%"></p><a id="more"></a><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><h1 id="-2"><a href="#-2" class="headerlink" title="#"></a>#</h1><hr>]]></content>
+    <content type="html"><![CDATA[<p><img src="/uploads/os.jpg" alt></p><a id="more"></a><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><h1 id="-2"><a href="#-2" class="headerlink" title="#"></a>#</h1><hr>]]></content>
     
     <summary type="html">
     
-      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/uploads/os.jpg&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -65,15 +63,13 @@
     <link href="https://tcrushes.github.io/2020/07/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html"/>
     <id>https://tcrushes.github.io/2020/07/08/计算机网络.html</id>
     <published>2020-07-08T09:10:48.000Z</published>
-    <updated>2020-08-31T17:41:35.564Z</updated>
+    <updated>2020-10-14T13:25:03.103Z</updated>
     
-    <content type="html"><![CDATA[<p class="description"></p><p><img src="https://" alt style="width:100%"></p><a id="more"></a><h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><hr>]]></content>
+    <content type="html"><![CDATA[<p><img src="/uploads/internet.jpg" alt></p><a id="more"></a><h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><hr>]]></content>
     
     <summary type="html">
     
-      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/uploads/internet.jpg&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
