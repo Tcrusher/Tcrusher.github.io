@@ -164,13 +164,14 @@
 
 
 
-  <meta property="og:type" content="article">
+  <meta name="keywords" content="操作系统">
+<meta property="og:type" content="article">
 <meta property="og:title" content="读者-写者问题">
 <meta property="og:url" content="https://tcrushes.github.io/2020/09/14/读者-写者问题.html">
 <meta property="og:site_name" content="Tcrush">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://tcrushes.github.io/uploads/os.jpg">
-<meta property="og:updated_time" content="2020-10-14T13:26:27.856Z">
+<meta property="og:updated_time" content="2020-10-16T14:12:49.114Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读者-写者问题">
 <meta name="twitter:image" content="https://tcrushes.github.io/uploads/os.jpg">
@@ -514,11 +515,29 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-10-14 21:26:27" itemprop="dateModified" datetime="2020-10-14T21:26:27+08:00">2020-10-14</time>
+                <time title="修改时间：2020-10-16 22:12:49" itemprop="dateModified" datetime="2020-10-16T22:12:49+08:00">2020-10-16</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/操作系统/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -570,7 +589,14 @@
       
         <p><img src="/uploads/os.jpg" alt></p>
 <a id="more"></a>
-<h1 id><a href="#" class="headerlink" title="#"></a>#</h1><h1 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h1><h1 id="-2"><a href="#-2" class="headerlink" title="#"></a>#</h1><hr>
+<h2 id="读者-写者问题"><a href="#读者-写者问题" class="headerlink" title="读者-写者问题"></a>读者-写者问题</h2><p>读者进程和写者进程共享一个文件，当两个或两个以上的读进程同时访问共享数据时不会产生副作用，但若某个写进程和其他进程（读进程或写进程）同时访问共享数据时则可能导致数据不一致的错误。</p>
+<p>1、允许多个读者可以同时对文件执行读操作<br>2、只允许一个写者往文件中写信息<br>3、任一写者在完成写操作之前不允许其他读者或写者工作<br>4、写者执行写操作前，应让已有的读者和写者全部退出</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>互斥关系：写者进程与写者进程，写者进程与读者进程<br>读者进程与读者进程不存在互斥关系。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">semaphore rw=<span class="number">1</span>; <span class="comment">//用于实现对共享文件的互斥访问</span></span><br><span class="line"><span class="keyword">int</span> count = <span class="number">0</span>; <span class="comment">//记录当前有几个读进程在访问文件</span></span><br><span class="line">semaphore mutex = <span class="number">1</span>;<span class="comment">//用于保证对count变量的互斥访问</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">writer</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">		P(rw); <span class="comment">//写之前“加锁”</span></span><br><span class="line">		写文件…</span><br><span class="line">		V(rw); <span class="comment">//写完了“解锁”</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reader</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">		P(mutex); <span class="comment">//各读进程互斥访问count</span></span><br><span class="line">		<span class="keyword">if</span>(count==<span class="number">0</span>) <span class="comment">//由第一个读进程负责</span></span><br><span class="line">			P(rw); <span class="comment">//读之前“加锁”</span></span><br><span class="line">		count++; <span class="comment">//访问文件的读进程数+1</span></span><br><span class="line">		V(mutex);</span><br><span class="line">		读文件…</span><br><span class="line">		P(mutex); <span class="comment">//各读进程互斥访问count</span></span><br><span class="line">		count--; <span class="comment">//访问文件的读进程数-1</span></span><br><span class="line">		<span class="keyword">if</span>(count==<span class="number">0</span>) <span class="comment">//由最后一个读进程负责</span></span><br><span class="line">			V(rw); <span class="comment">//读完了“解锁”</span></span><br><span class="line">		V(mutex);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>潜在的问题：只要有读进程还在读，写进程就要一直阻塞等待，可能“饿死”。因此，这种算法中，读者进程是优先的</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">semaphore rw=<span class="number">1</span>; <span class="comment">//用于实现对共享文件的互斥访问</span></span><br><span class="line"><span class="keyword">int</span> count = <span class="number">0</span>; <span class="comment">//记录当前有几个读进程在访问文件</span></span><br><span class="line">semaphore mutex = <span class="number">1</span>; <span class="comment">//用于保证对count变</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">writer</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">		P(w);</span><br><span class="line">		P(rw);</span><br><span class="line">		写文件…</span><br><span class="line">		V(rw);</span><br><span class="line">		V(w);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reader</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">		P(w);</span><br><span class="line">		P(mutex);</span><br><span class="line">		<span class="keyword">if</span>(count==<span class="number">0</span>)</span><br><span class="line">			P(rw);</span><br><span class="line">		count++;</span><br><span class="line">		V(mutex);</span><br><span class="line">		V(w);</span><br><span class="line">		读文件…</span><br><span class="line">		P(mutex);</span><br><span class="line">		count--;</span><br><span class="line">		<span class="keyword">if</span>(count==<span class="number">0</span>)</span><br><span class="line">			V(rw);</span><br><span class="line">		V(mutex);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在这种算法中，连续进入的多个读者可以同时读文件；写者和其他进程不能同时访问文件；写者不会饥饿，相对公平的先来先服务原则。</p>
+<hr>
 
       
     </div>
@@ -603,7 +629,7 @@
   <p><span>本文标题:</span><a href="/2020/09/14/读者-写者问题.html">读者-写者问题</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Tcrush 的个人博客">Tcrush</a></p>
   <p><span>发布时间:</span>2020年09月14日 - 15:37</p>
-  <p><span>最后更新:</span>2020年10月14日 - 21:26</p>
+  <p><span>最后更新:</span>2020年10月16日 - 22:12</p>
   <p><span>原始链接:</span><a href="/2020/09/14/读者-写者问题.html" title="读者-写者问题">https://tcrushes.github.io/2020/09/14/读者-写者问题.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://tcrushes.github.io/2020/09/14/读者-写者问题.html" aria-label="复制成功！"></i></span>
   </p>
@@ -636,6 +662,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/操作系统/" rel="tag"><i class="fa fa-tag"></i>操作系统</a>
+          
+        </div>
+      
 
       
       
@@ -644,6 +676,10 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/10/16/生产者-消费者问题.html" rel="prev" title="生产者-消费者问题">
+                 <i class="fa fa-chevron-left"></i> 生产者-消费者问题
+              </a>
             
           </div>
 
@@ -731,7 +767,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -927,7 +963,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#-1"><span class="nav-number">2.</span> <span class="nav-text">#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#-2"><span class="nav-number">3.</span> <span class="nav-text">#</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#读者-写者问题"><span class="nav-number">1.</span> <span class="nav-text">读者-写者问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li></ol></div>
             
 
           </div>
